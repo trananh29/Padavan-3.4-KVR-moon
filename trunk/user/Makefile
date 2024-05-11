@@ -132,7 +132,7 @@ dir_y							+= pppoe
 #dir_y                                                   += pppoe-relay
 #dir_y							+= xl2tpd
 dir_$(CONFIG_FIRMWARE_INCLUDE_RPL2TP)			+= rp-l2tp
-dir_y							+= lldt
+#dir_y							+= lldt
 dir_y							+= scripts
 dir_$(CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS)		+= skipdbv2
 dir_$(CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS)		+= chinadns-ng
@@ -220,7 +220,7 @@ ifneq (,$(filter y,$(CONFIG_FIRMWARE_INCLUDE_NFSD) $(CONFIG_FIRMWARE_INCLUDE_NFS
 dir_y							+= rpcbind
 endif
 #dir_y							+= optware
-dir_y							+= util-linux
+#dir_y							+= util-linux
 dir_$(FS_EXT_ENABLED)					+= e2fsprogs
 dir_$(FS_FAT_ENABLED)					+= dosfstools
 dir_$(FS_NTFS_ENABLED)					+= ntfs-3g
