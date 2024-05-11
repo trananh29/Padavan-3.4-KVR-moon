@@ -96,11 +96,11 @@ dir_  =
 dir_y							+= ralinkiappd
 dir_y							+= busybox
 dir_y							+= iptables
-dir_y							+= coremark
+#dir_y							+= coremark
 ifneq ($(CONFIG_WITHOUT_KERNEL),y)
 dir_$(CONFIG_FIRMWARE_INCLUDE_IPSET)		        += ipset
 endif
-dir_y							+= poptop
+#dir_y							+= poptop
 dir_y							+= ebtables
 dir_y							+= iproute2
 dir_y							+= wireless_tools
@@ -115,8 +115,8 @@ dir_y							+= rc
 dir_$(CONFIG_FIRMWARE_INCLUDE_ANTFS)			+= antfs
 dir_$(CONFIG_FIRMWARE_INCLUDE_NAPT66)			+= napt66
 dir_$(CONFIG_FIRMWARE_INCLUDE_SFE)			+= shortcut-fe
-dir_y							+= infosvr
-dir_y							+= inadyn
+#dir_y							+= infosvr
+#dir_y							+= inadyn
 dir_y							+= miniupnpd
 dir_y							+= dnsmasq
 dir_y							+= igmpproxy
@@ -124,13 +124,13 @@ ifneq ($(CONFIG_FIRMWARE_INCLUDE_MSD_LITE),y)
 dir_y							+= udpxy
 endif
 dir_y							+= utils
-dir_y							+= lanauth
-dir_y							+= 802.1x
+#dir_y							+= lanauth
+#dir_y							+= 802.1x
 dir_y							+= wpa_supplicant
 dir_y							+= pppd
 dir_y							+= pppoe
-dir_y                                                   += pppoe-relay
-dir_y							+= xl2tpd
+#dir_y                                                   += pppoe-relay
+#dir_y							+= xl2tpd
 dir_$(CONFIG_FIRMWARE_INCLUDE_RPL2TP)			+= rp-l2tp
 dir_y							+= lldt
 dir_y							+= scripts
@@ -219,7 +219,7 @@ dir_$(CONFIG_FIRMWARE_INCLUDE_NFSD)			+= nfs-utils
 ifneq (,$(filter y,$(CONFIG_FIRMWARE_INCLUDE_NFSD) $(CONFIG_FIRMWARE_INCLUDE_NFSC)))
 dir_y							+= rpcbind
 endif
-dir_y							+= optware
+#dir_y							+= optware
 dir_y							+= util-linux
 dir_$(FS_EXT_ENABLED)					+= e2fsprogs
 dir_$(FS_FAT_ENABLED)					+= dosfstools
