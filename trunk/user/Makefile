@@ -94,7 +94,7 @@ dir_y =
 dir_n =
 dir_  =
 #dir_y							+= ralinkiappd
-dir_y							+= busybox
+#dir_y							+= busybox
 dir_y							+= iptables
 #dir_y							+= coremark
 ifneq ($(CONFIG_WITHOUT_KERNEL),y)
@@ -106,7 +106,7 @@ dir_y							+= iproute2
 dir_y							+= wireless_tools
 dir_y							+= shared
 dir_$(STORAGE_ENABLED)			                += libdisk
-dir_y							+= nvram
+#dir_y							+= nvram
 dir_y							+= mtd_write
 dir_y							+= networkmap
 dir_y							+= httpd
