@@ -24,6 +24,7 @@ clean:
 	fi
 	$(MAKE) -C $(SOURCE_DIR) clean
 	@rm -f $(CONFIG)
+	@(cd $(SOURCE_DIR); ./clear_tree; ./clear_tree_simple)
 
 .PHONY: $(PRODUCTS)
 $(PRODUCTS):
