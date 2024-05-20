@@ -94,7 +94,7 @@ dir_y =
 dir_n =
 dir_  =
 #dir_y							+= ralinkiappd
-dir_y							+= busybox
+#dir_y							+= busybox
 dir_y							+= iptables
 #dir_y							+= coremark
 ifneq ($(CONFIG_WITHOUT_KERNEL),y)
@@ -127,7 +127,7 @@ endif
 #dir_y							+= lanauth
 #dir_y							+= 802.1x
 #dir_y							+= wpa_supplicant
-#dir_y							+= pppd
+dir_y							+= pppd
 dir_y							+= pppoe
 #dir_y                                                   += pppoe-relay
 #dir_y							+= xl2tpd
