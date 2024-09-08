@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        target: [JCG-N2412M]
+        target: [CR660x]
         toolchain: [mipsel-linux-uclibc]
     steps:
       - uses: actions/checkout@main
